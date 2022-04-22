@@ -21,5 +21,8 @@ RUN apt install -y terraform
 # Install Requests
 RUN pip install requests
 
+# Install PyYaml
+RUN pip install pyyaml
+
 # Install infracost CLI
 RUN curl -fsSL https://raw.githubusercontent.com/infracost/infracost/master/scripts/install.sh | sh
