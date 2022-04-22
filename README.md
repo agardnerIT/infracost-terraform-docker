@@ -1,13 +1,5 @@
 # infracost-terraform-docker
 
-Python base container with:
+This branch is to hold the demonstration Job Executor Service Files only.
 
-- requests module
-- pyyaml module
-- infracost CLI
-- terraform CLI
-
-## Build
-```
-docker build -t gardnera/python:infracostv1 .
-```
+Unless you know why you're here, you should probably be on `main`.
