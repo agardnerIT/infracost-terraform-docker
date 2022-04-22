@@ -1,0 +1,7 @@
+---
+version: 0.1
+
+projects:
+  - path: "terraform/project1"
+  # more projects here which correspond to the folder structure you build, relative to this directory
+  # See here for format of this file: https://www.infracost.io/docs/features/config_file/
