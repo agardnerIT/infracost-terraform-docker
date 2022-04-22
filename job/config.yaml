@@ -1,0 +1,25 @@
+apiVersion: v2
+actions:
+  - name: "Check Cost with Infracost and Terraform"
+    events:
+      - name: "sh.keptn.event.checkcost.triggered"
+    tasks:
+      - name: "Run Infracost and Push Metrics to Dynatrace"
+        image: "gardnera/python:infracostv1"
+        imagePullPolicy: "Always"
+        env:
+          # Temporary dev only. Should be stored as secrets and use valueFrom: secret
+          - name: INFRACOST_API_KEY
+            valueFrom: string
+            value: "*******"
+          - name: DT_ENVIRONMENT
+            valueFrom: string
+            value: "https://abc123.live.dynatrace.com"
+          - name: DT_API_TOKEN
+            valueFrom: string
+            value: "dt0c01.***"
+        files:
+          - /files
+        cmd:
+          - "python"
+          - "/keptn/files/app.py"
