@@ -18,5 +18,8 @@ RUN apt update
 # Install Terraform CLI
 RUN apt install -y terraform
 
+# Install Requests
+RUN pip install requests
+
 # Install infracost CLI
 RUN curl -fsSL https://raw.githubusercontent.com/infracost/infracost/master/scripts/install.sh | sh
