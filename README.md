@@ -1,6 +1,6 @@
 # infracost-terraform-docker
 
-Python base container with infracost and terraform CLIs.
+Python base container with requests module, infracost and terraform CLIs.
 
 ## Build
 ```
