@@ -14,7 +14,7 @@ spec:
       sequences:
         - name: "delivery"
           tasks:
-            - name: costcompliance
+            - name: "costcompliance"
             - name: "deployment"
               properties:
                 deploymentstrategy: "blue_green_service"
